@@ -84,7 +84,7 @@
                         var originalCommitLinkObj = commitLinks[0];
                         // Look for any JIRA issues in the commit title.
                         var issuesReferenced = originalCommitLinkObj.textContent.match(jiraIssueRegex);
-                        if (issuesReferenced.length > 0) {
+                        if (issuesReferenced && issuesReferenced.length > 0) {
                             logger(issuesReferenced);
                             // Create links for each JIRA issue.
                             var issues = new Array();
