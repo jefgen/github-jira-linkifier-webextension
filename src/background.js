@@ -26,7 +26,7 @@
         const jiraIssueRegex = /([A-Z]{2,10}\-[0-9]+)+/g;
         var openInNewTab = storedSettings.extensionSettings.useNewTab ? "target=\"_blank\"" : "";
         var protocol = storedSettings.extensionSettings.useHttps ? "https://" : "http://";
-        var jiraUrlToUse = protocol + storedSettings.extensionSettings.jiraUrl + ".atlassian.net";
+        var jiraUrlToUse = protocol + storedSettings.extensionSettings.jiraUrl;
         logger("Jira URL: " + jiraUrlToUse);
 
         // GitHub can change the contents of the page without reloading, so
