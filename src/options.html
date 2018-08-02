@@ -22,20 +22,23 @@
 
 <body>
   <h2>Configuration options:</h2>
-  <label>Jira URL:
-    <input id="jiraUrlTextBox" type="text" />
-  </label>
-  <br/>
-  <label>Use HTTPS for Jira links?:
-    <input id="useHttpsCheckbox" type="checkbox" />
-  </label>
-  <br/>
-  <label>Open Jira links in a new tab?:
-    <input id="openLinksInNewTab" type="checkbox" />
-  </label>
-  <br/>
+  <p>
+      <label>Jira URL:
+        <input id="jiraUrlTextBox" type="text" />
+      </label>
+      (For example: "unicode-org.atlassian.net")
+  </p>
+  <p>
+      <label>Use HTTPS for Jira links?:
+        <input id="useHttpsCheckbox" type="checkbox" />
+      </label>
+  </p>
+  <p>
+      <label>Open Jira links in a new tab?:
+        <input id="openLinksInNewTab" type="checkbox" />
+      </label>
+  </p>
   <div id="status"></div>
-  <br/>
   <button id="save" class="top-margin">Save</button>
 
   <script src="options.js"></script>
