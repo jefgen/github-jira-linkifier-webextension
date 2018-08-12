@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "GitHub Jira Issue Linkifier",
   "short_name": "JiraLinkifer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Automatically turns text that contains Jira issues (like ICU-1234) into click-able links on GitHub.",
   "author": "Jeff Genovy",
   "homepage_url": "https://github.com/jefgen/github-jira-linkifier-webextension",
