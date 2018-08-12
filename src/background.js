@@ -79,7 +79,7 @@
                 logger("Found " + commitListing.length + " commit(s).");
                 for (let commitEntry of commitListing) {
                     if (unlinked(commitEntry, jiraUrlToUse)) {
-                        // Check the type of commit page.
+                        // Check the "type" of the commit page that the user is looking at.
                         const commitLinks = commitEntry.getElementsByClassName('message');
                         if (commitLinks && commitLinks.length > 0) {
                             // Commit history page, with multiple commit titles.
@@ -95,7 +95,7 @@
                                 const issues = new Array();
                                 for (let jiraIssue of issuesReferenced) {
                                     const jiraCommitLink = document.createElement('a');
-                                    jiraCommitLink.innerHTML = jiraIssue + ' ';
+                                    jiraCommitLink.innerText = jiraIssue + ' ';
                                     jiraCommitLink.setAttribute('href', jiraUrlToUse + "/browse/" + jiraIssue);
                                     jiraCommitLink.setAttribute('title', jiraIssue);
                                     if (openInNewTab) {
