@@ -61,10 +61,10 @@
             }
 
             // Individual PR details page.
-            const detailsPageTitle = document.getElementsByClassName('js-issue-title');
+            const detailsPageTitle = document.querySelectorAll('span.js-issue-title');
             if (detailsPageTitle) {
                 logger("Found " + detailsPageTitle.length + " pr title(s).");
-                if (detailsPageTitle.length == 1) {
+                if (detailsPageTitle.length > 0) {
                     const detailsPageTitleObj = detailsPageTitle[0];
                     if (unlinked(detailsPageTitleObj, jiraUrlToUse)) {
                         detailsPageTitleObj.innerHTML = detailsPageTitleObj.innerHTML.replace(jiraIssueRegex,
