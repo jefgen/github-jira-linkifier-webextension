@@ -20,7 +20,7 @@ function saveOptions() {
         statusMessage.textContent = "Saved!";
         setTimeout(function () {
             statusMessage.textContent = '';
-        }, 900);
+        }, 1000);
     }, onError);
 }
 
