@@ -31,12 +31,11 @@
         // Commits
         const commitListing = document.getElementsByClassName('commit-title');
 
-        //logger("Found: " + pullRequests.length + " pr(s), " + detailsPageTitle.length + " pr title(s), " + commitListing.length + " commit(s).");
+        const protocol = settings.useHttps ? 'https://' : 'http://';
 
         for (let i = 0; i < extensionSettings.configs.length; i++) {
-            const openInNewTab = extensionSettings.openInNewTab ? 'target="_blank"' : '';
             const jiraIssueRegex = extensionSettings.configs[i].JiraIssueRegex;
-            const jiraUrlToUse = (settings.useHttps ? 'https://' : 'http://') + extensionSettings.configs[i].JiraUrl;
+            const jiraUrlToUse = protocol + extensionSettings.configs[i].JiraUrl;
 
             logger("Jira URL: " + jiraUrlToUse);
 
