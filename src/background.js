@@ -3,7 +3,7 @@
 
 (function () {
     // Set to true to enable logging output for debugging.
-    const debugOutput = true;
+    const debugOutput = false;
 
     const settings = {
         openInNewTab: true,
