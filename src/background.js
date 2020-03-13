@@ -187,7 +187,7 @@
         settings.openInNewTab = storedSettings.extensionSettings.useNewTab ? true : false;
         settings.useHttps = storedSettings.extensionSettings.useHttps ? true : false;
         settings.configs.push({
-            JiraIssueRegex: RegExp('([A-Z]{2,10}\-[0-9]+)+', 'g'),
+            JiraIssueRegex: RegExp('([A-Z0-9]{2,10}\-[0-9]+)+', 'g'),
             JiraUrl: storedSettings.extensionSettings.jiraUrl
         });
 
