@@ -27,7 +27,7 @@
         // Pull-Request listing page.
         const pullRequests = document.getElementsByClassName('js-issue-row');
         // Individual PR details page.
-        const detailsPageTitle = document.querySelectorAll('span.js-issue-title');
+        const detailsPageTitle = document.querySelectorAll('.js-issue-title');
         // Commits
         const commitListing = document.getElementsByClassName('commit-title');
 
